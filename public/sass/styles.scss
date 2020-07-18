@@ -1,0 +1,311 @@
+// router link(nav && anchor)
+.router-link-exact-active{
+  font-weight: bold;
+}
+
+// socials
+.social{
+  font-size: 30px;
+  color: white;
+  margin: 0 7px;
+  transition: all 0.3s;
+}
+.social:hover{
+  font-size: 31px;
+  margin: 0 15px;
+}
+
+// header
+.fHeader{
+  background: rgba(0, 0, 0, 0.774);
+  margin-bottom: 20px;
+  z-index: 2;
+  .logo{
+    width: 55px;
+  }
+}
+
+// footer
+.fFooter{
+  font-size: 20px;
+}
+
+// app
+.app-vue{
+  margin-top: 0;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.801)), url(../images/bg/coder.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: whitesmoke;
+  animation: aa ease-in-out infinite 7s;
+}
+
+// home
+.home{
+  .ibe, .stack{
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .stack{
+    color: greenyellow;
+    font-size: 17px;
+    font-family: cursive;
+  }
+  .home-btn-cont{
+    width: 86%;
+  }
+  .home-btn:hover{
+    background: rgba(0, 0, 0, 0.24);
+    border: 1px solid white;
+    color: white;
+    transition: all 0.8s;
+  }
+}
+
+// about
+.about{
+  .about-heading{
+    font-weight: lighter;
+    line-height: 1.2;
+  }
+}
+
+// portfolio
+.portfolio{
+  .portfolio-heading{
+    font-weight: lighter;
+    line-height: 1.2;
+  }
+  .card{
+    height: 350px;
+    box-shadow: 0px -2px 5px rgb(247, 246, 246), 0 2px 5px rgb(247, 246, 246);
+    .card img{
+      height: 250px;
+      width: max-content;
+    }
+  }
+  
+}
+
+// get-in-touch
+.git{
+  .git-btn{
+    width: 86%;
+  }
+  .git-btn:hover{
+    background: black;
+    border: 1px solid white;
+    color: white;
+    transition: all 0.8s;
+  }
+  .icons{
+    font-size: 30px;
+  }
+}
+
+// about && get-in-touch
+.about, .portfolio .portfolio-nav, .git{
+  a{
+    color: greenyellow !important;
+  }
+  a:hover{
+    color: rgb(123, 161, 65) !important;
+    text-decoration: none !important;
+    transition: all 0.7s;
+  }
+}
+
+// routing animation
+.fade-enter-active, .fade-leave-active{
+  transition-duration: 0.4s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+}
+.fade-enter, .fade-leave-active{
+  opacity: 0.2;
+}
+
+// media queries
+@media only screen and (max-width: 575px) {
+  .fHeader{
+    .logo{
+      font-size: 25px;
+    }
+  }
+  .navbar-dark .navbar-nav .nav-link{
+    font-size: 12px;
+  }
+  .social{
+    font-size: 25px;
+    margin: 0 10px;
+  }
+  .home{
+    .ibe{
+      font-size: 22px;
+    }
+    .stack{
+      font-size: 10px;
+    }
+    .home-btn-cont{
+      width: 100%;
+      font-size: 20px;
+      text-transform: capitalize;
+    }
+  }
+  .about{
+    .about-heading{
+      font-size: 1.3rem;
+      margin-bottom: 26px;
+    }
+    .thanks{
+      font-size: 0.9rem;
+    }
+  }
+  .portfolio{
+    .portfolio-heading{
+      font-size: 1.3rem;
+    }
+    .portfolio-nav{
+      font-size: small;
+    }
+    .portfolio-card-cont{
+      .card{
+        height: 316px;
+      }
+      .card img{
+        height: 210px;
+      }
+    }
+  }
+  .git{
+    .git-heading{
+      font-size: 1.3rem;
+    }
+    .git-nav{
+      font-size: small;
+    }
+    .icons{
+      font-size: 19px;
+    }
+    .contacts{
+      font-size: 16px;
+    }
+  }
+  .fFooter{
+    font-size: 13px;
+  }
+}
+@media only screen and (min-width: 575px) {
+  .about{
+    .about-heading{
+      font-size: 1.7rem;
+      margin-bottom: 30px;
+    }
+    .thanks{
+      font-size: 0.9rem;
+    }
+  }
+  .portfolio{
+    .portfolio-heading{
+      font-size: 2rem;
+    }
+    .portfolio-card-cont{
+      .card{
+        height: 317px;
+      }
+      .card img{
+        height: 210px;
+      }
+    }
+  }
+  .git{
+    .git-heading{
+      font-size: 2.0rem;
+    }
+    .icons{
+      font-size: 20px;
+    }
+    .contacts{
+      font-size: 17px;
+    }
+  }
+  .fFooter{
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 767px) {
+  .navbar-dark .navbar-nav .nav-link{
+    font-size: medium;
+  }
+  .home{
+    .ibe{
+      font-size: 45px;
+    }
+    .stack{
+      font-size: 20px;
+    }
+  }
+  .about{
+    .about-heading{
+      font-size: 2rem;
+    }
+    .thanks{
+      font-size: 1.2rem;
+    }
+  }
+  .git{
+    .git-heading{
+      font-size: 2.3rem;
+    }
+    .icons{
+      font-size: 24px;
+    }
+    .contacts{
+      font-size: 21px;
+    }
+  }
+  .portfolio{
+    .portfolio-heading{
+      font-size: 2rem;
+    }
+    .portfolio-card-cont{
+      .card{
+        height: 274px;
+      }
+      .card img{
+        height: 210px;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 991px) {
+  .home{
+    .ibe{
+      font-size: 55px;
+    }
+    .stack{
+      font-size: 25px;
+    }
+  }
+  .about{
+    .about-heading{
+      font-size: 2.98rem;
+    }
+    .thanks{
+      font-size: 1.3rem;
+    }
+  }
+  .portfolio{
+    .portfolio-heading{
+      font-size: 2.5rem;
+    }
+    .portfolio-card-cont{
+      .card{
+        height: 274px;
+      }
+      .card img{
+        height: 210px;
+      }
+    }
+  }
+}
